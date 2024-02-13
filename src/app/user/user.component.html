@@ -1,1 +1,27 @@
-<p>user works!</p>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>  
+            <button mat-icon-button [routerLink]="['/user', user.id]" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                Explore
+  </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
