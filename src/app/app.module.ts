@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { WildCardPageComponent } from './wild-card-page/wild-card-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    AboutComponent
+    AboutComponent,
+    WildCardPageComponent
   ],
   imports: [
     BrowserModule,
